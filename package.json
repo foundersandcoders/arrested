@@ -1,0 +1,42 @@
+{
+  "name": "arrested",
+  "version": "0.0.0",
+  "description": "interface for crud api calls to restful services",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape ./test/*.test.js",
+    "jshint": "jshint -c ./.jshintrc --exclude-path .gitignore .",
+    "coverage": "istanbul cover tape ./test/*.test.js && istanbul check-coverage --statements 95 --functions 95 --lines 95 --branches 95"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/foundersandcoders/arrested.git"
+  },
+  "keywords": [
+    "api",
+    "crud",
+    "interface",
+    "rest",
+    "restful",
+    "services"
+  ],
+  "author": "William Fisher, Besart Shyti",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/foundersandcoders/arrested/issues"
+  },
+  "pre-commit": [
+    "jshint",
+    "coverage"
+  ],
+  "homepage": "https://github.com/foundersandcoders/arrested",
+  "devDependencies": {
+    "istanbul": "^0.3.13",
+    "jshint": "^2.7.0",
+    "pre-commit": "^1.0.7",
+    "tape": "^4.0.0"
+  },
+  "dependencies": {
+    "torf": "^1.0.6"
+  }
+}
