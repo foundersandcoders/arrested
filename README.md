@@ -15,10 +15,16 @@ var config = {
 // create new interface
 var members = arrested(config);
 
+members.create({id: 1234, name: "Tarquin"}, function (e, h, r) {
 
-//****api*****
+  console.log("created a new member!");
+});
+```
 
-//create
+### api
+
+#### create
+```
 var newMember = {
   name: "Jacques",
   id: 298
@@ -28,8 +34,10 @@ members.create(newMember, function (e, h, r) {
 
   ...
 });
+```
 
-//find
+#### find
+```
 var member = {
   name: "Jacques",
   id: 298
@@ -39,8 +47,10 @@ members.find(member, function (e, h, r) {
 
   ...
 });
+```
 
-//findOne
+#### findOne
+```
 var member = {
   name: "Jacques",
   id: 298
@@ -50,8 +60,10 @@ members.findOne(member, function (e, h, r) {
 
   ...
 });
+```
 
-//update
+#### update
+```
 var member = {
   name: "Jacques",
   id: 298
@@ -64,8 +76,10 @@ members.update(member, changes, function (e, h, r) {
 
   ...
 });
+```
 
-//delete
+#### delete
+```
 var member = {
   name: "Jacques",
   id: 298
