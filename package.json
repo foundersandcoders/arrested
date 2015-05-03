@@ -1,6 +1,6 @@
 {
   "name": "arrested",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "interface for crud api calls to restful services",
   "main": "index.js",
   "scripts": {
