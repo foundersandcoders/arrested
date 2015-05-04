@@ -1,6 +1,6 @@
 {
   "name": "arrested",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "interface for crud api calls to restful services",
   "main": "index.js",
   "scripts": {
@@ -37,6 +37,7 @@
     "tape": "^4.0.0"
   },
   "dependencies": {
+    "givit": "0.0.2",
     "torf": "^1.0.6"
   }
 }
